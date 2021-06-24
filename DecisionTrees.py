@@ -87,6 +87,7 @@ def createCARTtree(dataset,leafType=regressLeaf,errType=regressErr,threshold=(1,
     returnTree[feature]['<=' + str(value) + 'contains' + str(len(leftSet))] = createCARTtree(leftSet,leafType,errType,threshold)
     returnTree[feature]['>' + str(value) + 'contains' + str(len(rightSet))] = createCARTtree(rightSet,leafType,errType,threshold)
     return returnTree
+    
 if __name__ == '__main__':
 
     data = pd.read_csv("iris.csv")
