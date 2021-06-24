@@ -10,6 +10,12 @@ def getInformationEntropy(arr,leng):
 #print(informationEntropy)
 
 
+<<<<<<< HEAD
+=======
+# In[105]:
+
+
+>>>>>>> e45a1aaf0af294f14f5d94863cb9639665b67b67
 #离散化特征一的值
 def discretization(index):
 
@@ -43,6 +49,13 @@ def discretization(index):
     return res_value
 
 
+<<<<<<< HEAD
+=======
+
+# In[122]:
+
+
+>>>>>>> e45a1aaf0af294f14f5d94863cb9639665b67b67
 #求合适的分割值
 def getRazors():
     a = []
@@ -53,6 +66,12 @@ def getRazors():
     return np.array(a)
 
 
+<<<<<<< HEAD
+=======
+# In[326]:
+
+
+>>>>>>> e45a1aaf0af294f14f5d94863cb9639665b67b67
 #随机抽取80%的训练集和20%的测试集
 def divideData():
     completeData = np.c_[iris.data,iris.target.T]
@@ -62,6 +81,12 @@ def divideData():
     return [trainData,testData]
 
 
+<<<<<<< HEAD
+=======
+# In[213]:
+
+
+>>>>>>> e45a1aaf0af294f14f5d94863cb9639665b67b67
 def getEntropy(counter):
 
     res = 0
@@ -75,6 +100,13 @@ def getEntropy(counter):
     return -res
 
 
+<<<<<<< HEAD
+=======
+
+# In[262]:
+
+
+>>>>>>> e45a1aaf0af294f14f5d94863cb9639665b67b67
 def findMaxIndex(dataSet):
     maxIndex = 0
     maxValue = -1
@@ -85,6 +117,12 @@ def findMaxIndex(dataSet):
     return maxIndex
 
 
+<<<<<<< HEAD
+=======
+# In[308]:
+
+
+>>>>>>> e45a1aaf0af294f14f5d94863cb9639665b67b67
 def recursion(featureSet,dataSet,counterSet):
     #print("函数开始，剩余特征：",featureSet,"  剩余结果长度：",len(dataSet))
 
@@ -148,6 +186,14 @@ def recursion(featureSet,dataSet,counterSet):
     return child
 
 
+<<<<<<< HEAD
+=======
+
+# In[322]:
+
+
+
+>>>>>>> e45a1aaf0af294f14f5d94863cb9639665b67b67
 def judge(data,tree):
 
     root = "unknow"
@@ -167,6 +213,11 @@ def judge(data,tree):
                 tree = tree[3]
     return root
 
+<<<<<<< HEAD
+=======
+# In[327]:
+
+>>>>>>> e45a1aaf0af294f14f5d94863cb9639665b67b67
 
 if __name__ == '__main__':
 
@@ -192,4 +243,8 @@ if __name__ == '__main__':
         index = index + 1
         if result == truth:
             right = right + 1
+<<<<<<< HEAD
     print("正确率 ： ",right/index)
+=======
+    print("正确率 ： ",right/index)
+>>>>>>> e45a1aaf0af294f14f5d94863cb9639665b67b67
