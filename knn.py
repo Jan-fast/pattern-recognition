@@ -89,7 +89,7 @@ class KNN:
   return np.asarray(result)
 
   #创建KNN对象，进行训练与测试。
-knn = KNN(k=3)
+knn = KNN(k=5)
 #进行训练
 knn.fit(train_X,train_y)
 #进行测试
@@ -122,5 +122,5 @@ plt.xlabel("sepal_length")
 plt.ylabel("petal_length")
 plt.title("KNN")
 plt.legend(loc="best")
-plt.savefig("./KNN.png")
+# plt.savefig("./KNN.png")
 plt.show()
